@@ -6,6 +6,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 const usersPath = path.join(__dirname, 'users.json')
 console.log(usersPath)
+
 // const users = [
 //     {id: 1, name: 'Maksym', email: 'feden@gmail.com', password: 'qwe123'},
 //     {id: 2, name: 'Alina', email: 'alindosik@gmail.com', password: 'ert345'},
