@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Maksym",
+    "email": "feden@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 2,
+    "name": "Alina",
+    "email": "alindosik@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 3,
+    "name": "Anna",
+    "email": "ann43@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 4,
+    "name": "Tamara",
+    "email": "tomochka23@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 5,
+    "name": "Dima",
+    "email": "taper@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 6,
+    "name": "Rita",
+    "email": "torpeda@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 7,
+    "name": "Deni",
+    "email": "denchik@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 8,
+    "name": "Serg",
+    "email": "BigBoss@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 9,
+    "name": "Ange",
+    "email": "lala@gmail.com",
+    "password": "qwe123"
+  },
+  {
+    "id": 10,
+    "name": "Irin",
+    "email": "irka7@gmail.com",
+    "password": "qwe123"
+  }
+]
