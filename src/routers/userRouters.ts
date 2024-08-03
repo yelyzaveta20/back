@@ -1,15 +1,38 @@
 import { Router } from "express";
 import {userController} from "../controllers/userController";
-
+import {commonMiddleware} from "../midllewares/user.middleware";
 
 
 const router = Router();
 
 router.get("/", userController.getList);
-router.post("/", userController.create);
+router.post(
+    "/",
+    // TODO add validation middleware for body
+    userController.create,
+);
 
-router.get("/:userId", userController.get);
-router.put("/:userId", userController.put);
-router.delete("/:userId", userController.delete);
+// router.get(
+//   "/:userId/invoices/:invoiceId",
+//   commonMiddleware.isIdValid("userId"),
+//   commonMiddleware.isIdValid("invoiceId"),
+//   userController.getById,
+// );
+router.get(
+    "/:userId",
+    commonMiddleware.isIdValid("userId"),
+    userController.getById,
+);
+router.put(
+    "/:userId",
+    commonMiddleware.isIdValid("userId"),
+    // TODO add validation middleware for body
+    userController.updateById,
+);
+router.delete(
+    "/:carId",
+    commonMiddleware.isIdValid("carId"),
+    userController.deleteById,
+);
 
 export const userRouter = router;

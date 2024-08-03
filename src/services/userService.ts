@@ -1,7 +1,6 @@
 import {IUser} from "../interface/userInterface";
 import {userRepository} from "../repositories/userRepositories";
 import {ApiError} from "../errors/api-errors";
-import {fsService} from "../fs.service";
 
 
 class UserService {
@@ -30,17 +29,16 @@ class UserService {
         return await userRepository.create(dto);
     }
 
-    public async get(userId: number): Promise<IUser> {
-
-        return await userRepository.get(userId);
+    public async getById(userId: string): Promise<IUser> {
+        return await userRepository.getById(userId);
     }
-    public async put(dto: IUser, userId:number): Promise<IUser> {
 
-        return await userRepository.put(dto, userId);
+    public async updateById(userId: string, dto: IUser): Promise<IUser> {
+        return await userRepository.updateById(userId, dto);
     }
-    public async delete(userId:number): Promise<void> {
 
-        return await userRepository.delete(userId);
+    public async deleteById(userId: string): Promise<void> {
+        await userRepository.deleteById(userId);
     }
 }
 
